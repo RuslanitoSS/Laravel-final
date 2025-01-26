@@ -1,4 +1,3 @@
-<!-- resources/views/things/create.blade.php -->
 @extends('layouts.app')
 @section('title', 'Добавить новую вещь')
 

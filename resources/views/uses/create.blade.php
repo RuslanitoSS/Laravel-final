@@ -1,4 +1,3 @@
-<!-- resources/views/uses/create.blade.php -->
 @extends('layouts.app')
 @section('title', 'Добавить новое использование')
 

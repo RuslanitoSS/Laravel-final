@@ -1,4 +1,3 @@
-<!-- resources/views/uses/edit.blade.php -->
 @extends('layouts.app')
 @section('title', 'Pедактировать использование')
 

@@ -1,4 +1,3 @@
-<!-- resources/views/things/show.blade.php -->
 @extends('layouts.app')
 @section('title', 'Детали вещи')
 

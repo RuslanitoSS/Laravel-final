@@ -1,4 +1,3 @@
-<!-- resources/views/things/edit.blade.php -->
 @extends('layouts.app')
 @section('title', 'Редактировать вещь')
 

@@ -1,4 +1,3 @@
-<!-- resources/views/things/index.blade.php -->
 @extends('layouts.app')
 @section('title', 'Список вещей')
 

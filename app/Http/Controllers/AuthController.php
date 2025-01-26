@@ -10,13 +10,23 @@ use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-    // GET /login - возвращает страницу логина
+    /**
+     * Запрос для view auth.login
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function showLogin()
     {
         return view('auth.login');
     }
 
-    // POST /login - выполняет логин
+    /**
+     * Запрос для входа в систему
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -35,13 +45,23 @@ class AuthController extends Controller
             ->with('status', 'error');
     }
 
-    // GET /register - возвращает страницу регистрации
+    /**
+     * Запрос для view auth.register
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function showRegister()
     {
         return view('auth.register');
     }
 
-    // POST /register - выполняет регистрацию
+    /**
+     * Запрос для регистрацию в систему
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function register(Request $request)
     {
         $data = $request->validate([
@@ -62,7 +82,13 @@ class AuthController extends Controller
             ->with('status', 'registered');
     }
 
-    // POST /logout - выполняет логаут
+
+    /**
+     * Запрос для выхода из систему
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function logout(Request $request)
     {
         Auth::logout();

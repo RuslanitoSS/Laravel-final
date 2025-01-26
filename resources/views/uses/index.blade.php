@@ -1,4 +1,3 @@
-<!-- resources/views/uses/index.blade.php -->
 @extends('layouts.app')
 @section('title', 'Список использований')
 

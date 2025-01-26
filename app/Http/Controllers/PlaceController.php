@@ -1,6 +1,5 @@
 <?php
 
-// app/Http/Controllers/PlaceController.php
 
 namespace App\Http\Controllers;
 
